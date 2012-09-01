@@ -1,0 +1,281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16C1876915F160C1009F3F1B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C1876815F160C1009F3F1B /* UIKit.framework */; };
+		16C1876B15F160C1009F3F1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C1876A15F160C1009F3F1B /* Foundation.framework */; };
+		16C1876D15F160C1009F3F1B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C1876C15F160C1009F3F1B /* CoreGraphics.framework */; };
+		16C1877315F160C1009F3F1B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 16C1877115F160C1009F3F1B /* InfoPlist.strings */; };
+		16C1877515F160C1009F3F1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C1877415F160C1009F3F1B /* main.m */; };
+		16C1877915F160C1009F3F1B /* GFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C1877815F160C1009F3F1B /* GFAppDelegate.m */; };
+		16C1877C15F160C1009F3F1B /* GFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C1877B15F160C1009F3F1B /* GFViewController.m */; };
+		16C1878B15F167AF009F3F1B /* GFGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C1878A15F167AF009F3F1B /* GFGraphView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		16C1876415F160C1009F3F1B /* Graph Fantastic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Graph Fantastic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		16C1876815F160C1009F3F1B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		16C1876A15F160C1009F3F1B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		16C1876C15F160C1009F3F1B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		16C1877015F160C1009F3F1B /* Graph Fantastic-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Graph Fantastic-Info.plist"; sourceTree = "<group>"; };
+		16C1877215F160C1009F3F1B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		16C1877415F160C1009F3F1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		16C1877615F160C1009F3F1B /* Graph Fantastic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Graph Fantastic-Prefix.pch"; sourceTree = "<group>"; };
+		16C1877715F160C1009F3F1B /* GFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFAppDelegate.h; sourceTree = "<group>"; };
+		16C1877815F160C1009F3F1B /* GFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFAppDelegate.m; sourceTree = "<group>"; };
+		16C1877A15F160C1009F3F1B /* GFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFViewController.h; sourceTree = "<group>"; };
+		16C1877B15F160C1009F3F1B /* GFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFViewController.m; sourceTree = "<group>"; };
+		16C1878915F167AE009F3F1B /* GFGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGraphView.h; sourceTree = "<group>"; };
+		16C1878A15F167AF009F3F1B /* GFGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGraphView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16C1876115F160C1009F3F1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16C1876915F160C1009F3F1B /* UIKit.framework in Frameworks */,
+				16C1876B15F160C1009F3F1B /* Foundation.framework in Frameworks */,
+				16C1876D15F160C1009F3F1B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16C1875915F160C1009F3F1B = {
+			isa = PBXGroup;
+			children = (
+				16C1876E15F160C1009F3F1B /* Graph Fantastic */,
+				16C1876715F160C1009F3F1B /* Frameworks */,
+				16C1876515F160C1009F3F1B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		16C1876515F160C1009F3F1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16C1876415F160C1009F3F1B /* Graph Fantastic.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16C1876715F160C1009F3F1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16C1876815F160C1009F3F1B /* UIKit.framework */,
+				16C1876A15F160C1009F3F1B /* Foundation.framework */,
+				16C1876C15F160C1009F3F1B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		16C1876E15F160C1009F3F1B /* Graph Fantastic */ = {
+			isa = PBXGroup;
+			children = (
+				16C1877715F160C1009F3F1B /* GFAppDelegate.h */,
+				16C1877815F160C1009F3F1B /* GFAppDelegate.m */,
+				16C1877A15F160C1009F3F1B /* GFViewController.h */,
+				16C1877B15F160C1009F3F1B /* GFViewController.m */,
+				16C1878915F167AE009F3F1B /* GFGraphView.h */,
+				16C1878A15F167AF009F3F1B /* GFGraphView.m */,
+				16C1876F15F160C1009F3F1B /* Supporting Files */,
+			);
+			path = "Graph Fantastic";
+			sourceTree = "<group>";
+		};
+		16C1876F15F160C1009F3F1B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				16C1877015F160C1009F3F1B /* Graph Fantastic-Info.plist */,
+				16C1877115F160C1009F3F1B /* InfoPlist.strings */,
+				16C1877415F160C1009F3F1B /* main.m */,
+				16C1877615F160C1009F3F1B /* Graph Fantastic-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16C1876315F160C1009F3F1B /* Graph Fantastic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16C1878215F160C1009F3F1B /* Build configuration list for PBXNativeTarget "Graph Fantastic" */;
+			buildPhases = (
+				16C1876015F160C1009F3F1B /* Sources */,
+				16C1876115F160C1009F3F1B /* Frameworks */,
+				16C1876215F160C1009F3F1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Graph Fantastic";
+			productName = "Graph Fantastic";
+			productReference = 16C1876415F160C1009F3F1B /* Graph Fantastic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16C1875B15F160C1009F3F1B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GF;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Kris Fields";
+			};
+			buildConfigurationList = 16C1875E15F160C1009F3F1B /* Build configuration list for PBXProject "Graph Fantastic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 16C1875915F160C1009F3F1B;
+			productRefGroup = 16C1876515F160C1009F3F1B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16C1876315F160C1009F3F1B /* Graph Fantastic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16C1876215F160C1009F3F1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16C1877315F160C1009F3F1B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16C1876015F160C1009F3F1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16C1877515F160C1009F3F1B /* main.m in Sources */,
+				16C1877915F160C1009F3F1B /* GFAppDelegate.m in Sources */,
+				16C1877C15F160C1009F3F1B /* GFViewController.m in Sources */,
+				16C1878B15F167AF009F3F1B /* GFGraphView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		16C1877115F160C1009F3F1B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16C1877215F160C1009F3F1B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		16C1878015F160C1009F3F1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		16C1878115F160C1009F3F1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16C1878315F160C1009F3F1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Graph Fantastic/Graph Fantastic-Prefix.pch";
+				INFOPLIST_FILE = "Graph Fantastic/Graph Fantastic-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		16C1878415F160C1009F3F1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Graph Fantastic/Graph Fantastic-Prefix.pch";
+				INFOPLIST_FILE = "Graph Fantastic/Graph Fantastic-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16C1875E15F160C1009F3F1B /* Build configuration list for PBXProject "Graph Fantastic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16C1878015F160C1009F3F1B /* Debug */,
+				16C1878115F160C1009F3F1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16C1878215F160C1009F3F1B /* Build configuration list for PBXNativeTarget "Graph Fantastic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16C1878315F160C1009F3F1B /* Debug */,
+				16C1878415F160C1009F3F1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16C1875B15F160C1009F3F1B /* Project object */;
+}
