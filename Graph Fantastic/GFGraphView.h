@@ -13,5 +13,6 @@ typedef double(^fn)(double);
 
 @interface GFGraphView : UIView
 @property (nonatomic, copy) fn graphBlock;
+@property (nonatomic, strong) NSMutableArray *allFunctionsToGraph;
 @property (nonatomic) double scale;
 @end

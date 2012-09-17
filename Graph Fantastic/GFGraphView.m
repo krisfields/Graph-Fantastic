@@ -18,7 +18,15 @@
     }
     return self;
 }
-
+//- (void)setScale:(double)scale
+//{
+//    NSLog(@"scale in setScale = %f", scale);
+//    if (scale > 1){
+//        _scale = 1;
+//    }else if (scale < 0){
+//        _scale = 0;
+//    }
+//}
 
 // Only override drawRect: if you perform custom drawing.
 //// An empty implementation adversely affects performance during animation.
@@ -29,7 +37,7 @@
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextMoveToPoint(context, self.bounds.origin.x, 0);
     CGContextAddLineToPoint(context, self.bounds.origin.x + self.bounds.size.width, 0);
-    CGContextSetLineWidth(context, 10);
+    CGContextSetLineWidth(context, 5);
     [[UIColor grayColor] set];
     CGContextStrokePath(context);
     CGContextMoveToPoint(context, 0, self.bounds.origin.y);
@@ -46,18 +54,26 @@
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetLineWidth(context, 10);
     [[UIColor orangeColor] set];
-    CGContextMoveToPoint(context, self.bounds.origin.x, self.graphBlock(-self.bounds.origin.x));
+    CGFloat dashArray[] = {2,6,4,2};    
+    CGContextSetLineDash(context, 3, dashArray, 4);
+        NSLog(@"self.scale in drawPoints = %f", self.scale);
     for (int i = self.bounds.origin.x; i <= self.bounds.origin.x + self.bounds.size.width; i += 5 ) {
+
         double graphX = i * self.scale;
         double graphY = self.graphBlock(graphX);
         
         double pointsY = (-1 * graphY) / self.scale;
         
-        NSLog(@"self.graphBlock is = %f", self.graphBlock(i));
+//        NSLog(@"self.graphBlock is = %f", self.graphBlock(i));
 //        NSLog(@"y is equal to = %f", y);
+        if (i == self.bounds.origin.x) {
+            CGContextMoveToPoint(context, i, pointsY);
+        }
         CGContextAddLineToPoint(context, i, pointsY);
+        
     }
     CGContextStrokePath(context);
+//    self.scale = .05;
 //    CGContextSetLineWidth(context, 1);
 //    [[UIColor grayColor] set];
 //    for (int i = self.bounds.origin.x; i <= self.bounds.origin.x + self.bounds.size.width; i += 20 ) {
@@ -72,5 +88,9 @@
 //    }
 }
 
-
+- (void)setGraphBlock:(fn)graphBlock
+{
+    _graphBlock = graphBlock;
+    [self.allFunctionsToGraph addObject:graphBlock];
+}
 @end
